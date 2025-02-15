@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+      // Get the current path
+      let path = window.location.pathname;
+      let hash = window.location.hash;
+      
+      // Remove '/mywebsite' from the path if it exists
+      path = path.replace('/mywebsite', '');
+      
+      // Convert the path to a hash route
+      if (path !== '/' && path !== '/index.html') {
+        // Remove leading slash and convert to hash
+        window.location.href = '/mywebsite/#' + path.slice(1);
+      } else {
+        // If we're at the root, just redirect to the main page
+        window.location.href = '/mywebsite/';
+      }
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html> 
