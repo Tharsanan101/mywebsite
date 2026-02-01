@@ -2,14 +2,16 @@ export default function AboutPage() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-black/80 backdrop-blur border-b border-gray-800 z-50">
-        <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-semibold">Klever Books</h1>
+      <nav className="fixed top-0 w-full bg-black bg-opacity-90 z-50 px-4 py-4 border-b border-gray-800">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <a href="/" className="text-2xl font-bold hover:text-purple-400 transition">
+            Klever Books
+          </a>
           <div className="flex gap-8">
-            <a href="/" className="text-gray-300 hover:text-white transition">Home</a>
-            <a href="/about" className="text-white">About</a>
-            <a href="/" className="text-gray-300 hover:text-white transition">Writing</a>
-            <a href="/" className="text-gray-300 hover:text-white transition">Contact</a>
+            <a href="/" className="hover:text-purple-400 transition">Home</a>
+            <a href="/about" className="text-purple-400">About</a>
+            <a href="/writing" className="hover:text-purple-400 transition">Writing</a>
+            <a href="/contact" className="hover:text-purple-400 transition">Contact</a>
           </div>
         </div>
       </nav>
